@@ -1,17 +1,17 @@
 Algoritmo temanuevo14
-    Definir anioActual, anio1, anio2, anio3 Como Entero
+    Definir añoActual, año1, año2, año3 Como Entero
     Definir edad1, edad2, edad3 Como Entero
 	
-    anioActual <- pedirAnioActual(A)
+    añoActual <- pedirAñoActual(A)
 	
-    anio1 <- pedirAnioNacimiento(1)
-    edad1 <- calcularEdad(anio1, anioActual)
+    año1 <- pedirAñoNacimiento(1)
+    edad1 <- calcularEdad(año1, añoActual)
 	
-    anio2 <- pedirAnioNacimiento(2)
-    edad2 <- calcularEdad(anio2, anioActual)
+    año2 <- pedirAñoNacimiento(2)
+    edad2 <- calcularEdad(año2, añoActual)
 	
-    anio3 <- pedirAnioNacimiento(3)
-    edad3 <- calcularEdad(anio3, anioActual)
+    año3 <- pedirAñoNacimiento(3)
+    edad3 <- calcularEdad(año3, añoActual)
 	
     mostrarEdad(1, edad1)
     mostrarEdad(2, edad2)
@@ -19,27 +19,28 @@ Algoritmo temanuevo14
 FinAlgoritmo
 
 
-Funcion anio <- pedirAnioActual(A)
-    Definir anio Como Entero
-    Escribir "Ingrese el a�o actual: "
-    Leer anio
+Funcion año <- pedirAñoActual(A)
+    Definir año Como Entero
+    Escribir "Ingrese el año actual: "
+    Leer año
 FinFuncion
 
 
-Funcion anioNac <- pedirAnioNacimiento(numPersona)
-    Definir anioNac Como Entero
-    Escribir "Ingrese el a�o de nacimiento de la persona ", numPersona, ": "
-    Leer anioNac
+Funcion añoNaci <- pedirAñoNacimiento(numPersona)
+    Definir añoNaci Como Entero
+    Escribir "Ingrese el año de nacimiento de la persona ", numPersona, ": "
+    Leer añoNaci
 FinFuncion
 
 
-Funcion edad <- calcularEdad(anioNac, anioAct)
+Funcion edad <- calcularEdad(añoNaci, añoAct)
     Definir edad Como Entero
-    edad <- anioAct - anioNac
+    edad <- añoAct - añoNaci
 FinFuncion
 
 
 SubProceso mostrarEdad(numPersona, edad)
-    Escribir "La edad de la persona ", numPersona, " es: ", edad, " a�os"
+    Escribir "La edad de la persona ", numPersona, " es: ", edad, " años"
 FinSubProceso
+
 
